@@ -1,3 +1,5 @@
+
+
 .card-header {
   font-size: 20px;
 }
@@ -20,8 +22,34 @@
     }
   }
   
+.col-lg-8 {
+  padding-bottom: 50px;
+}
+
   html,
   body {
     height: 100%;
   }
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+  }
   
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 30px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 15px;
+    border-style: dotted;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
