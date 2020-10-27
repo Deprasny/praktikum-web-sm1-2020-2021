@@ -87,6 +87,28 @@
             <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
           </div>
         </div>
+        <h2 class="my-4">Keterisian Keranjang RS
+        </h2>
+        <div class="card mb-3">
+          <form>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="input-j">Jumlah total ranjang di RS</label>
+              <input type="text" class="form-control" id="input-j" >
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="input-t">Jumlah total ranjang di RS yang terisi</label>
+              <input type="text" class="form-control" id="input-t">
+            </div>
+            <a href="#" class="btn btn-primary mx-sm-3 mb-2" onclick="prosesPerhitungan()">Submit</a>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="input-t">Persentase keterisian <b id="output-ptj"></b></label>
+            </div>
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="input-t">Kondisi <b id="output-k"></b></label>
+            </div>
+          </form>
+          
+        </div>
         <h2 class="my-4">Apa yang Harus Diketahui 
         </h2>
         <div class="card mb-3">
@@ -105,6 +127,8 @@
               </li>
             </ul>
         </div>
+       
+        
         
 
       </div>
@@ -212,8 +236,10 @@
           <div>Pakai Masker</div>
           <div>Jaga Jarak</div>  
         </div>
+        
       </div>
       <!-- /.col-lg-9 -->
+      
 
     </div>
     <!-- /.row -->
@@ -226,6 +252,49 @@
 
 
   <!-- Bootstrap core JavaScript -->
+  <script>
+
+    // Membuat fungsi dengan nama prosesPerhitungan
+  function prosesPerhitungan() {
+
+    // Menampilkan log
+    console.log("Fungsi prosesPerhitungan() dipanggil");
+
+    // Mengambil element dengan id "input-j" kemudian di simpan di variable j 
+    var j = document.getElementById("input-j").value;
+
+    // Mengambil element dengan id "input-t" kemudian di simpan di variable t
+    var t = document.getElementById("input-t").value;
+
+    // Buat formula untuk menghitung persentase keterisian ranjang (ptj) ! 
+    // Persentase keterisian ranjang = ranjang yang terisi dibagi dengan total ranjang
+    var ptj = t / j * 100; 
+
+    // menampilkan hasil dari variable ptj dan di tampilkan di element dengan id "output-ptj" ...
+    document.getElementById("output-ptj").textContent = ptj + " %";
+
+    /*
+      Buat formula untuk menampilkan kondisi keterisian ranjang (k)
+      Jika dibawah 30%, kondisi = AMAN
+      Jika 30% - 70%, kondisi = WASPADA
+      Jika diatas 70%, kondisi = DARURAT
+    */
+
+    if(ptj > 70){
+        k = "DARURAT";
+    }else if(ptj >= 30 && ptj <= 70){
+        k = "WASPADA";
+    }else if(ptj < 30){
+        k = "AMAN";
+    }; 
+
+    // menampilkan hasil dari variable k dan di tampilkan di element dengan id "output-k" ...
+    document.getElementById("output-k").textContent = k;
+
+  }
+
+
+</script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
