@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Dashboard COVID-19 Indonesia</title>
+  <title>Dashboard COVID-19 Jabar</title>
   <link rel="manifest" href="/manifest.json">
 
   <!-- Bootstrap core CSS -->
@@ -26,7 +26,7 @@
   <!-- Mendeklarasikan ikon untuk iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="Dashboard COVID-19 Indonesia" />
+  <meta name="apple-mobile-web-app-title" content="Dashboard COVID-19 jabar" />
 
 </head>
 
@@ -39,7 +39,7 @@
       <a class="navbar-brand" href="#">
         <img height="50px" src="https://pikobar.jabarprov.go.id/logo.jpg" alt="">
       </a>
-      <p style="padding-top:10px; color: #03AC0E;">Dashboard Covid 19 Indonesia</p>
+      <p style="padding-top:10px; color: #03AC0E;">Dashboard Covid 19 Jabar</p>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -63,7 +63,7 @@
             <a class="nav-link" href="#">Kontak</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Download App</button>
+            <button class="btn btn-outline-success my-2 my-sm-0 " type="jabart">Download App</button>
           </li>
         </ul>
       </div>
@@ -77,20 +77,20 @@
 
       <div class="col-lg-4">
 
-        <h2 class="my-4">Dashboard Statistik Kasus COVID-19 Indonesia
+        <h2 class="my-4">Dashboard Statistik Kasus COVID-19 Jabar
         </h2>
         <div class="card mb-3">
           <img src="https://m.ayocirebon.com/images-cirebon/post/articles/2020/06/05/5612/20200604_181654(1).jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Pengumuman</h5>
-            <p class="card-text">Update Terakhir: Senin, 5 Okt 2020</p>
+            <p class="card-text">Level kewaspadaan Jabar kini mengikuti zonasi dari Pemerintah Pusat. Lihat peta risiko di sini!</p>
             <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
           </div>
         </div>
         <h2 class="my-4">Keterisian Keranjang RS
         </h2>
         <div class="card mb-3">
-          <form>
+          <form class="p-3">
             <div class="form-group mx-sm-3 mb-2">
               <label for="input-j">Jumlah total ranjang di RS</label>
               <input type="text" class="form-control" id="input-j" >
@@ -99,8 +99,8 @@
               <label for="input-t">Jumlah total ranjang di RS yang terisi</label>
               <input type="text" class="form-control" id="input-t">
             </div>
-            <a href="#" class="btn btn-primary mx-sm-3 mb-2" onclick="prosesPerhitungan()">Submit</a>
-            <div class="form-group mx-sm-3 mb-2">
+            <a href="#" class="btn btn-primary mx-sm-3 mb-2 float-right pt-2" onclick="prosesPerhitungan()">Submit</a>
+            <div class="form-group mx-sm-3 mb-2 pt-5">
               <label for="input-t">Persentase keterisian <b id="output-ptj"></b></label>
             </div>
             <div class="form-group mx-sm-3 mb-2">
@@ -115,15 +115,99 @@
             <ul class="list-group">
               <li class="list-group-item">
                 <h4>Apa Itu COVID-19?</h4>
-                <p></p>
+                <a class="list-barang" data-toggle="modal" data-target="#exampleModal" href="#">Klik disini </a>
+                 <!-- Modal -->
+                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Apa Itu COVID-19 ?</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-6">
+                            <p class="card-text">COVID-19 adalah penyakit yang disebabkan oleh Novel Coronavirus (2019-nCoV), jenis baru coronavirus yang pada manusia menyebabkan penyakit mulai flu biasa hingga penyakit yang serius seperti Middle East Respiratory Syndrome (MERS) dan Sindrom Pernapasan Akut Berat/ Severe Acute Respiratory Syndrome (SARS).
+
+                              Pada 11 Februari 2020, World Health Organization (WHO) mengumumkan nama penyakit yang disebabkan 2019-nCov, yaitu Coronavirus Disease (COVID-19).</p>
+                          </div>
+                          <div class="col-6">
+                            <img src="https://awsimages.detik.net.id/community/media/visual/2020/10/28/ilustrasi-virus-corona-covid-19-3_169.jpeg?w=600&q=90" class="card-img-top" alt="...">
+                            <div class="card-body">
+                          </div>
+                        </div>
+                        </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
               </li>
               <li class="list-group-item">
                 <h4>Gejala</h4>
-                <p></p>
+                <a class="list-barang" data-toggle="modal" data-target="#exampleModal2" href="#">Klik disini </a>
+                 <!-- Modal -->
+                 <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Gejala</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                      </div>
+                      <div class="modal-body">
+                        
+                      <div class="row">
+                        <div class="col-6">
+                          <p class="card-text">Gejala umum berupa demam ≥38°C, batuk kering, dan sesak napas. Jika ada orang yang dalam 14 hari sebelum muncul gejala tersebut pernah melakukan perjalanan ke negara terjangkit, atau pernah merawat/kontak erat dengan penderita COVID-19, maka terhadap orang tersebut akan dilakukan pemeriksaan laboratorium lebih lanjut untuk memastikan diagnosisnya.</p>
+                        </div>
+                        <div class="col-6">
+                          <img src="https://lh3.googleusercontent.com/proxy/VYaz0O_9nT2pkceo7v1wg55gMPnZepKBKpvlpgfDTC7kXFKPanScvjJxZNfXMGIyVT89sGNGR3OT1WWlsP0OB-NKwLRvA3qK1Z6EmyfKHRAsa8e_3ChQbfEw0klkMAPJUhal_jirl9pmiFsjV-IX584fZ3tb5AjpnYYUI5UAaipz5VLRxtCEC1Vhj3rZL3oltA" class="card-img-top" alt="...">
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
               </li>
               <li class="list-group-item">
                 <h4>Penularan</h4>
-                <p></p>
+                <a class="list-barang" data-toggle="modal" data-target="#exampleModal3" href="#">Klik disini </a>
+                 <!-- Modal -->
+                 <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Penularan</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                      </div>
+                      <div class="modal-body">
+                       <div class="row">
+                        <div class="col-6">
+                          <p class="card-text">Seseorang dapat terinfeksi dari penderita COVID-19. Penyakit ini dapat menyebar melalui tetesan kecil (droplet) dari hidung atau mulut pada saat batuk atau bersin. Droplet tersebut kemudian jatuh pada benda di sekitarnya. Kemudian jika ada orang lain menyentuh benda yang sudah terkontaminasi dengan droplet tersebut, lalu orang itu menyentuh mata, hidung atau mulut (segitiga wajah), maka orang itu dapat terinfeksi COVID-19. Seseorang juga bisa terinfeksi COVID-19 ketika tanpa sengaja menghirup droplet dari penderita. Inilah sebabnya mengapa kita penting untuk menjaga jarak hingga kurang lebih satu meter dari orang yang sakit.</p>
+                          
+                        </div>
+                         <div class="col-6">
+                          <img src="https://lh3.googleusercontent.com/proxy/Hf6NXdOsStv0jTQjtC1Ofk0-szUgTV2MgsdJEaHeNuoFfuB_v9A_3MorzDUU6Wpcb8Cn4-HYdIFZHYmWfgveIkr_PUauzxLJ1Oa-32Ky_tto7YgEeXtbHkBBDT1ITUvmGdhsDKEspUR7xpjZBJED7D9BqPRSjFUsg3MygeGZb6AsDgylUiLgLy7YDcvAKidlHirgog" class="card-img-top" alt="...">
+                            
+                         </div>
+
+                       </div>
+                           
+                      <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                  </div>
+                  </div>
+              </div>
               </li>
             </ul>
         </div>
@@ -162,7 +246,7 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-
+        <h4 class="pb-2">Angka Kejadian di Jawa Barat</h4>
         <div class="row">
 
           <div class="col-lg-6 col-md-6 mb-6">
@@ -171,7 +255,7 @@
               <div class="card-body text-primary">
                 <div class="row justify-content-between">
                   <div class="col-6">
-                    <h5 class="card-title">Indonesia</h5><i class="fa fa-user-o "></i> 311.176
+                    <h5 class="card-title">Jawa Barat</h5><i class="fa fa-user-o "></i> 311.176
                   </div>
                   <div class="col-6">
                     <h5 class="card-title">Penambahan</h5><i class="fa fa-angle-double-up "></i> 4056
@@ -187,7 +271,7 @@
               <div class="card-body text-warning">
                 <div class="row justify-content-between">
                   <div class="col-6">
-                    <h5 class="card-title">Indonesia</h5><i class="fa fa-user-o "></i> 63.365
+                    <h5 class="card-title">Jawa Barat</h5><i class="fa fa-user-o "></i> 63.365
                   </div>
                   <div class="col-6">
                     <h5 class="card-title">Penambahan</h5><i class="fa fa-angle-double-up "></i> 91
@@ -203,7 +287,7 @@
               <div class="card-body text-success">
                 <div class="row justify-content-between">
                   <div class="col-6">
-                    <h5 class="card-title">Indonesia</h5><i class="fa fa-user-o "></i> 236.437
+                    <h5 class="card-title">Jawa Barat</h5><i class="fa fa-user-o "></i> 236.437
                   </div>
                   <div class="col-6">
                     <h5 class="card-title">Penambahan</h5><i class="fa fa-angle-double-up "></i> 3844
@@ -219,7 +303,7 @@
               <div class="card-body text-danger ">
                 <div class="row justify-content-between">
                   <div class="col-6">
-                    <h5 class="card-title">Indonesia</h5><i class="fa fa-user-o "></i> 11.374
+                    <h5 class="card-title">Jawa Barat</h5><i class="fa fa-user-o "></i> 11.374
                   </div>
                   <div class="col-6">
                     <h5 class="card-title">Penambahan</h5><i class="fa fa-angle-double-up "></i> 121
@@ -231,10 +315,39 @@
 
         </div>
         <!-- /.row -->
+        <h4 class="pb-2">Daftar Rumah Sakit Rujukan di Jawa Barat
+        </h4>
         <div class="flex-container">
-          <div>Cuci Tangan</div>
-          <div>Pakai Masker</div>
-          <div>Jaga Jarak</div>  
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nama RS</th>
+                <th scope="col">Alamat</th>
+                <th scope="col">No. Telepon</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>RSU Dr. Hasan Sadikin</td>
+                <td>Jl. Pasteur No. 38,<br> Kota Bandung</td>
+                <td>@+62 22 2034 953</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>RSAU Dr. M. Salamun Bandung</td>
+                <td>Jl. Ciumbuleuit No.203,<br> Kota Bandung</td>
+                <td>@+62 22 2032090</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>RSTP Dr. H. A. Rotinsulu</td>
+                <td>Jl. Bukit Jarian No.40, Hegarmanah,<br> Kota Bandung</td>
+                <td>@+62 22 2034446</td>
+              </tr>
+            </tbody>
+          </table> 
         </div>
         
       </div>
@@ -243,13 +356,38 @@
 
     </div>
     <!-- /.row -->
+  
     
 
   </div>
-  <!-- /.container -->
-  <div class="element">
+  <div class="card text-center">
+  
+    <div class="card-body">
+      <div class="row">
+        <div class="col-centered">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Call Center</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Nomor Darurat</h6>
+              <p style="font-size: 30px;color: #03AC0E;" class="card-text"><i class="fa fa-phone "></i> 199</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-centered">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Hotline Pikobar</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Chat WA seputar COVID-19</h6>
+              <p style="font-size: 25px;color: #03AC0E;" class="card-text"><i class="fa fa-whatsapp "></i>Klik untuk chat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-muted">
+      © Official website Pemerintah Provinsi Jawa Barat 2020
+    </div>
   </div>
-
 
   <!-- Bootstrap core JavaScript -->
   <script>
