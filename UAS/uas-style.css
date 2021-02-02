@@ -1,0 +1,52 @@
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+.card-header {
+  font-size: 20px;
+}
+
+.card-title {
+  font-size: 22px !important; 
+}
+  
+.col-lg-8 {
+  padding-bottom: 50px;
+}
+
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 30px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 15px;
+    border-style: dotted;
+  }
+  .navbar-brand {
+    font-family: Product Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
+    font-size: .875rem;
+}
+
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-family: Product Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
+    font-size: 16px;
+}
+
+li{
+    padding-right:2rem;
+}

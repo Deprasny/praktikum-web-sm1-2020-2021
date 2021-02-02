@@ -13,9 +13,11 @@
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="pertemuan3-dashboard-covid-19.css">
+  <link rel="stylesheet" href="uas-style.css">
   <!-- font awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- chartjs-->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 
   <!-- Custom styles for this template -->
   <link href="vendor/shop-homepage.css" rel="stylesheet">
@@ -77,8 +79,8 @@
 
       <div class="col-lg-4">
 
-        <h3 class="my-4">Dashboard Statistik Kasus COVID-19 Jabar
-        </h3>
+        <h2 class="my-4">Dashboard Statistik Kasus COVID-19 Jabar
+        </h2>
         <div class="card mb-3">
           <img src="https://m.ayocirebon.com/images-cirebon/post/articles/2020/06/05/5612/20200604_181654(1).jpg" class="card-img-top" alt="...">
           <div class="card-body">
@@ -166,7 +168,7 @@
                           <p class="card-text">Gejala umum berupa demam ≥38°C, batuk kering, dan sesak napas. Jika ada orang yang dalam 14 hari sebelum muncul gejala tersebut pernah melakukan perjalanan ke negara terjangkit, atau pernah merawat/kontak erat dengan penderita COVID-19, maka terhadap orang tersebut akan dilakukan pemeriksaan laboratorium lebih lanjut untuk memastikan diagnosisnya.</p>
                         </div>
                         <div class="col-6">
-                          <img src="https://lh3.googleusercontent.com/proxy/VYaz0O_9nT2pkceo7v1wg55gMPnZepKBKpvlpgfDTC7kXFKPanScvjJxZNfXMGIyVT89sGNGR3OT1WWlsP0OB-NKwLRvA3qK1Z6EmyfKHRAsa8e_3ChQbfEw0klkMAPJUhal_jirl9pmiFsjV-IX584fZ3tb5AjpnYYUI5UAaipz5VLRxtCEC1Vhj3rZL3oltA" class="card-img-top" alt="...">
+                          <img src="https://cache.jpnn.com/timthumb.php?src=https://photo.jpnn.com/arsip/watermark/2021/01/25/ilustrasi_covid-19.jpeg&w=600&h=320&a=t&zc=0&q=80" class="card-img-top" alt="...">
                         </div>
                       </div>
                       <div class="modal-footer">
@@ -196,7 +198,7 @@
                           
                         </div>
                          <div class="col-6">
-                          <img src="https://lh3.googleusercontent.com/proxy/Hf6NXdOsStv0jTQjtC1Ofk0-szUgTV2MgsdJEaHeNuoFfuB_v9A_3MorzDUU6Wpcb8Cn4-HYdIFZHYmWfgveIkr_PUauzxLJ1Oa-32Ky_tto7YgEeXtbHkBBDT1ITUvmGdhsDKEspUR7xpjZBJED7D9BqPRSjFUsg3MygeGZb6AsDgylUiLgLy7YDcvAKidlHirgog" class="card-img-top" alt="...">
+                          <img src="https://cdn0-production-images-kly.akamaized.net/R1uRIH-461kxsSX4ghXINB3t6cE=/640x640/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/3176173/original/044472600_1594378179-Banner_infografis_WHO_akui_penularan_covid-19_via_udara.jpg" class="card-img-top" alt="...">
                             
                          </div>
 
@@ -255,10 +257,10 @@
               <div class="card-body text-primary">
                 <div class="row justify-content-between">
                   <div class="col-6">
-                    <h5 class="card-title">Jawa Barat</h5><i class="fa fa-user-o "></i> 311.176
+                    <h5 class="card-title">Jawa Barat</h5><i class="fa fa-user-o "></i> 36.583
                   </div>
                   <div class="col-6">
-                    <h5 class="card-title">Penambahan</h5><i class="fa fa-angle-double-up "></i> 4056
+                    <h5 class="card-title">Penambahan</h5><i class="fa fa-angle-double-up "></i> 245
                   </div>
                 </div>
               </div>
@@ -271,10 +273,10 @@
               <div class="card-body text-warning">
                 <div class="row justify-content-between">
                   <div class="col-6">
-                    <h5 class="card-title">Jawa Barat</h5><i class="fa fa-user-o "></i> 63.365
+                    <h5 class="card-title">Jawa Barat</h5><i class="fa fa-user-o "></i> 9.580
                   </div>
                   <div class="col-6">
-                    <h5 class="card-title">Penambahan</h5><i class="fa fa-angle-double-up "></i> 91
+                    <h5 class="card-title">Penambahan</h5><i class="fa fa-angle-double-up "></i> 395
                   </div>
                 </div>
               </div>
@@ -287,10 +289,10 @@
               <div class="card-body text-success">
                 <div class="row justify-content-between">
                   <div class="col-6">
-                    <h5 class="card-title">Jawa Barat</h5><i class="fa fa-user-o "></i> 236.437
+                    <h5 class="card-title">Jawa Barat</h5><i class="fa fa-user-o "></i> 26.282
                   </div>
                   <div class="col-6">
-                    <h5 class="card-title">Penambahan</h5><i class="fa fa-angle-double-up "></i> 3844
+                    <h5 class="card-title">Penambahan</h5><i class="fa fa-angle-double-up "></i> 638
                   </div>
                 </div>
               </div>
@@ -303,10 +305,10 @@
               <div class="card-body text-danger ">
                 <div class="row justify-content-between">
                   <div class="col-6">
-                    <h5 class="card-title">Jawa Barat</h5><i class="fa fa-user-o "></i> 11.374
+                    <h5 class="card-title">Jawa Barat</h5><i class="fa fa-user-o "></i> 721
                   </div>
                   <div class="col-6">
-                    <h5 class="card-title">Penambahan</h5><i class="fa fa-angle-double-up "></i> 121
+                    <h5 class="card-title">Penambahan</h5><i class="fa fa-angle-double-up "></i> 2
                   </div>
                 </div>
               </div>
@@ -357,14 +359,17 @@
     </div>
     <!-- /.row -->
   
-    
+    <div class="card-body">
+      <canvas id="canvas-untuk-menggambar-grafik"></canvas>
+    </div>
 
   </div>
+
   <div class="card text-center">
   
     <div class="card-body">
       <div class="row">
-        <div class="col-centered">
+        <div class="col-6 d-flex justify-content-center text-center ">
           <div class="card" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Call Center</h5>
@@ -373,12 +378,12 @@
             </div>
           </div>
         </div>
-        <div class="col-centered">
+        <div class="col-6 d-flex justify-content-center text-center">
           <div class="card" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Hotline Pikobar</h5>
               <h6 class="card-subtitle mb-2 text-muted">Chat WA seputar COVID-19</h6>
-              <p style="font-size: 25px;color: #03AC0E;" class="card-text"><i class="fa fa-whatsapp "></i>Klik untuk chat</p>
+              <p style="font-size: 20px;color: #03AC0E;" class="card-text"><i class="fa fa-whatsapp "></i>Klik untuk chat</p>
             </div>
           </div>
         </div>
@@ -388,7 +393,145 @@
       © Official website Pemerintah Provinsi Jawa Barat 2020
     </div>
   </div>
+  <!--  chartjs -->
+  <script>
 
+    function buatDataUntukGrafik(dataPenduduk, dataDokter) {
+            
+      var label = dataPenduduk.nilai_per_wilayah.map(function(satuanData) {
+        return satuanData.wilayah; 
+      }); 
+
+      var jumlahDokter = dataDokter.nilai_per_wilayah.map(function(satuanData) {
+        return satuanData.nilai_per_tahun[0].nilai;
+      });
+
+      var jumlahPenduduk = dataPenduduk.nilai_per_wilayah.map(function(satuanData) {
+        return satuanData.nilai_per_tahun[0].nilai;
+      });
+
+      var jumlahPendudukPerDokter = dataPenduduk.nilai_per_wilayah.map(function(satuanData, urutan) {
+        return Math.round(jumlahPenduduk[urutan] / jumlahDokter[urutan]);
+      });
+
+      var garisIdealWHOPendudukPerDokter = dataPenduduk.nilai_per_wilayah.map(function(satuanData) {
+        return 1000;
+      });
+
+      var garisIdealBPJSPendudukPerDokter = dataPenduduk.nilai_per_wilayah.map(function(satuanData) {
+        return 5000;
+      });
+
+      var dataUntukGrafik = {
+        labels: label,
+        datasets: [{
+          label: "Rasio Ideal Penduduk per 1 Dokter - WHO",
+          borderColor: "rgb(0, 0, 0)",
+          borderWidth: 1,
+          yAxisID: "sumbu-y-kanan",
+          data: garisIdealWHOPendudukPerDokter,
+          type: 'line'
+        }, {
+          label: "Rasio Ideal Penduduk per 1 Dokter - BPJS",
+          borderColor: "rgb(0, 0, 0)",
+          borderWidth: 3,
+          yAxisID: "sumbu-y-kanan",
+          data: garisIdealBPJSPendudukPerDokter,
+          type: 'line'
+        }, {
+          label: "Jumlah Penduduk",
+          backgroundColor: "rgb(153, 102, 255)",
+          yAxisID: "sumbu-y-kiri",
+          data: jumlahPenduduk
+        }, {
+          label: "Rasio Penduduk per 1 Dokter",
+          backgroundColor: "rgb(255, 64, 64)",
+          yAxisID: "sumbu-y-kanan",
+          data: jumlahPendudukPerDokter
+        }]
+      };
+
+      return dataUntukGrafik;
+
+    }
+
+    function buatGrafik(dataPenduduk, dataDokter) {
+
+      var elemenCanvas = document.getElementById("canvas-untuk-menggambar-grafik");
+      var penggambarCanvas = elemenCanvas.getContext("2d");
+
+      var judulGrafik = "Grafik Rasio Jumlah Penduduk Per 1 Dokter";
+      var dataUntukGrafik = buatDataUntukGrafik(dataPenduduk, dataDokter);
+
+      var konfigurasiChartJS = {
+        type: 'bar',
+        data: dataUntukGrafik,
+        options: {
+          responsive: true,
+          title: {
+            display: true,
+            text: judulGrafik
+          },
+          scales: {
+            yAxes: [{
+                type: 'linear',
+                display: true,
+                position: 'left',
+                ticks: {
+                    min: 0
+                },
+                id: 'sumbu-y-kiri'
+              }, {
+                type: 'linear',
+                display: true,
+                position: 'right',
+                ticks: {
+                  min: 0
+                },
+                id: 'sumbu-y-kanan'
+              }]
+          }
+        }
+      }
+
+      var grafik = new Chart(penggambarCanvas, konfigurasiChartJS);
+
+    }
+
+    window.onload = function() {
+            
+      var urlDataPenduduk = "https://mechaid.github.io/course-materials/praktikum-web/2020-2021/contoh/json-api-ke-chart/penduduk-jawa-barat-2019.json"; 
+      var urlDataDokter = "https://mechaid.github.io/course-materials/praktikum-web/2020-2021/contoh/json-api-ke-chart/dokter-jawa-barat-2019.json";
+
+      var dataPenduduk, dataDokter;
+
+      var requestDataPenduduk = new XMLHttpRequest();
+      requestDataPenduduk.open("GET", urlDataPenduduk, true);
+      requestDataPenduduk.onreadystatechange = function() {
+        if(this.readyState == 4 && this.status == 200) {
+          dataPenduduk = JSON.parse(this.responseText);
+          if(dataDokter !== undefined) {
+            buatGrafik(dataPenduduk, dataDokter);
+          }
+
+        } 
+      };
+      requestDataPenduduk.send();
+
+      var requestDataDokter = new XMLHttpRequest();
+      requestDataDokter.open("GET", urlDataDokter, true);
+      requestDataDokter.onreadystatechange = function() {
+        if(this.readyState == 4 && this.status == 200) {
+          dataDokter = JSON.parse(this.responseText);
+          if(dataPenduduk !== undefined) {
+            buatGrafik(dataPenduduk, dataDokter);
+          }
+        } 
+      };
+      requestDataDokter.send();
+            
+    };
+  </script>
   <!-- Bootstrap core JavaScript -->
   <script>
 
